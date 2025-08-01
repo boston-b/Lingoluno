@@ -1,0 +1,43 @@
+export default function Page() {
+  return (
+    <main style={{
+      minHeight: "100vh",
+      display: "grid",
+      placeItems: "center",
+      background: "#0b0b0b",
+      color: "#fff",
+      padding: 24,
+      textAlign: "center"
+    }}>
+      <div style={{ maxWidth: 720 }}>
+        <img src="/hero-1280.webp" alt="Lingoluno" style={{ width: "100%", height: "auto", borderRadius: 12 }} />
+        <h1 style={{ marginTop: 16 }}>Coming soon</h1>
+        <p>Release target: Q2 2026</p>
+        <div style={{ marginTop: 16 }}>
+          <a href="https://x.com/lingoluno" target="_blank" rel="noopener">Follow @lingoluno</a>
+        </div>
+      </div>
+    </main>
+export default function Page() {
+  return (
+    <main style={{
+      minHeight: "100vh",
+      display: "grid",
+      placeItems: "center",
+      background: "#0b0b0b",
+      color: "#fff",
+      padding: "24px",
+      textAlign: "center"
+    }}>
+      <div>
+        <img
+          src="/coming-soon.png"
+          alt="Coming soon"
+          style={{ maxWidth: "520px", width: "100%", borderRadius: "12px" }}
+        />
+        <h1 style={{ marginTop: 16 }}>Release target: Q2 2026</h1>
+        <p>We are building something cool. Stay tuned.</p>
+      </div>
+    </main>
+  );
+}

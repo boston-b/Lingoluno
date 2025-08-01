@@ -1,26 +1,23 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/* Theme colors */
+:root { --bg: #ffffff; --fg: #111111; }
+.theme-dark { --bg: #1c1c1c; --fg: #f5f5f5; }
+.theme-light { --bg: #ffffff; --fg: #111111; }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+html, body { height: 100%; }
+body { background: var(--bg); color: var(--fg); }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+/* Buttons */
+.btn { @apply inline-flex items-center justify-center px-4 py-2 rounded-lg font-semibold transition; }
+.btn { background: #ffffff; color:#111111; }
+.btn:hover { background: #eaeaea; }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-}
+.btn-ghost { @apply inline-flex items-center justify-center px-4 py-2 rounded-lg font-semibold transition; }
+.btn-ghost { background: rgba(255,255,255,0.9); color:#111; }
+.btn-ghost:hover { background: #ffffff; }
+
+/* Icon next to text */
+.icon { width: 20px; height: 20px; display:inline-block; vertical-align:middle; margin-right:8px; }
